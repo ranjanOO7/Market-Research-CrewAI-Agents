@@ -1,0 +1,14 @@
+research_task:
+  description: >
+    Provide 5-10 interesting and recent facts about {topic}
+  expected_output: >
+    List of interesting facts in bullet points.
+  agent: researcher_agent
+
+writer_task:
+  description: >
+    Create an interesting and a professional article for linkedin on {topic}
+  expected_output: >
+    An optimised an interesting article for linkedin.
+  agent: writer_agent
+  context: [research_task]
